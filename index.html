@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="#" />
+        
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        
+		<title>Vélo'v: location de Vélos à Lyon</title>
+	</head>
+    
+    <body>
+        <header>
+            <h1>Lyon Velo'v</h1>
+            <div>
+                <p>
+                    <i class="fas fa-bicycle"></i>Réserver votre vélo et visiter la ville !<i class="fas fa-bicycle"></i>
+                </p>
+            </div>
+            <div id="slider">
+                <div id="pictures">
+                    <img src="images/velo1.png" />
+                    <img src="images/velos.png" />
+                    <img src="images/velos2.png" />
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div id="map">
+            </div>
+            <article id="bikes">
+                <p>Cliquez sur un marqueur sur la carte pour afficher les détails de la station.</p>
+            </article>
+        </section>
+        
+        <footer>
+            <div id="informations">
+                <h3 id="title">Aucun Vélo réservé</h3>
+                <p id="chrono"></p>
+            </div>
+        </footer>
+        
+        <script src="js/ajax.js"></script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQtV8hzCVuqrLG2_XByAgw1SbsoELgGZ0&callback=initMap"
+    async defer></script>
+        <script src="js/bike.js"></script>
+  </body>
+</html>
