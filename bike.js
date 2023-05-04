@@ -119,7 +119,7 @@ function initMap() {
     
     // DEBUT Appel AjaxGEt *******************************************************************************************************************
     
-    var appel = ajaxGet("https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=b506e30f70a76f1c22ffeb11395a7c7d15dcca86", function (results) {
+    var appel = ajaxGet("https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey={yourAPIkey}", function (results) {
         
         var markers = [];
         
